@@ -16,291 +16,121 @@
     transition: opacity 1s ease-out;
 }
 
-#loading-screen.fade-out {
-    opacity: 0;
-}
-
-.page-content.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.page-content.fade-in {
-    opacity: 1;
-    transition: opacity 1s ease-in;
-}
+#loading-screen.fade-out { opacity: 0; }
+.page-content.hidden { opacity: 0; visibility: hidden; }
+.page-content.fade-in { opacity: 1; transition: opacity 1s ease-in; }
 
 /* --- Starfield Background Styles --- */
 @keyframes animStar {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-2000px);
-  }
+  from { transform: translateY(0px); }
+  to { transform: translateY(-2000px); }
 }
-
 #stars {
-  width: 1px;
-  height: 1px;
-  background: transparent;
+  width: 1px; height: 1px; background: transparent;
   box-shadow: 1908px 668px #FFF, 1729px 1296px #FFF, 1572px 1133px #FFF, 1568px 429px #FFF, 401px 119px #FFF, 1850px 182px #FFF, 148px 1139px #FFF, 230px 1638px #FFF, 1417px 1157px #FFF, 114px 1476px #FFF, 1421px 1324px #FFF, 1293px 838px #FFF, 1756px 528px #FFF, 1770px 1708px #FFF, 496px 1611px #FFF, 34px 1402px #FFF, 1335px 339px #FFF, 1205px 113px #FFF, 494px 920px #FFF, 751px 512px #FFF, 1109px 1018px #FFF, 101px 1239px #FFF, 1392px 112px #FFF, 1826px 1495px #FFF, 1283px 1898px #FFF, 1269px 1445px #FFF, 839px 1032px #FFF, 1374px 1726px #FFF, 891px 229px #FFF, 1222px 1009px #FFF, 988px 106px #FFF, 670px 1832px #FFF, 1024px 113px #FFF, 1722px 1738px #FFF, 109px 1634px #FFF, 1801px 135px #FFF, 1492px 166px #FFF, 1007px 1038px #FFF, 104px 177px #FFF, 1122px 696px #FFF, 1515px 1269px #FFF, 381px 1016px #FFF, 690px 137px #FFF, 1391px 156px #FFF, 1290px 1000px #FFF, 853px 1497px #FFF, 88px 1618px #FFF, 1009px 83px #FFF;
   animation: animStar 50s linear infinite;
 }
 #stars:after {
-  content: " ";
-  position: absolute;
-  top: 2000px;
-  width: 1px;
-  height: 1px;
-  background: transparent;
+  content: " "; position: absolute; top: 2000px; width: 1px; height: 1px; background: transparent;
   box-shadow: 1908px 668px #FFF, 1729px 1296px #FFF, 1572px 1133px #FFF, 1568px 429px #FFF, 401px 119px #FFF, 1850px 182px #FFF, 148px 1139px #FFF, 230px 1638px #FFF, 1417px 1157px #FFF, 114px 1476px #FFF, 1421px 1324px #FFF, 1293px 838px #FFF, 1756px 528px #FFF, 1770px 1708px #FFF, 496px 1611px #FFF, 34px 1402px #FFF, 1335px 339px #FFF, 1205px 113px #FFF, 494px 920px #FFF, 751px 512px #FFF, 1109px 1018px #FFF, 101px 1239px #FFF, 1392px 112px #FFF, 1826px 1495px #FFF, 1283px 1898px #FFF, 1269px 1445px #FFF, 839px 1032px #FFF, 1374px 1726px #FFF, 891px 229px #FFF, 1222px 1009px #FFF, 988px 106px #FFF, 670px 1832px #FFF, 1024px 113px #FFF, 1722px 1738px #FFF, 109px 1634px #FFF, 1801px 135px #FFF, 1492px 166px #FFF, 1007px 1038px #FFF, 104px 177px #FFF, 1122px 696px #FFF, 1515px 1269px #FFF, 381px 1016px #FFF, 690px 137px #FFF, 1391px 156px #FFF, 1290px 1000px #FFF, 853px 1497px #FFF, 88px 1618px #FFF, 1009px 83px #FFF;
 }
-
 #stars2 {
-  width: 2px;
-  height: 2px;
-  background: transparent;
+  width: 2px; height: 2px; background: transparent;
   box-shadow: 108px 1473px #FFF, 1578px 1002px #FFF, 1561px 1583px #FFF, 1010px 103px #FFF, 1856px 1024px #FFF, 1105px 1155px #FFF, 1431px 1146px #FFF, 186px 819px #FFF, 523px 186px #FFF, 1258px 1237px #FFF, 1184px 1693px #FFF, 1311px 445px #FFF, 584px 134px #FFF, 237px 1371px #FFF, 33px 143px #FFF, 1893px 899px #FFF, 1008px 1145px #FFF, 24px 1899px #FFF, 1113px 100px #FFF, 1599px 1492px #FFF, 946px 1318px #FFF, 1400px 1709px #FFF, 898px 863px #FFF, 1439px 134px #FFF, 321px 1598px #FFF;
   animation: animStar 100s linear infinite;
 }
 #stars2:after {
-  content: " ";
-  position: absolute;
-  top: 2000px;
-  width: 2px;
-  height: 2px;
-  background: transparent;
+  content: " "; position: absolute; top: 2000px; width: 2px; height: 2px; background: transparent;
   box-shadow: 108px 1473px #FFF, 1578px 1002px #FFF, 1561px 1583px #FFF, 1010px 103px #FFF, 1856px 1024px #FFF, 1105px 1155px #FFF, 1431px 1146px #FFF, 186px 819px #FFF, 523px 186px #FFF, 1258px 1237px #FFF, 1184px 1693px #FFF, 1311px 445px #FFF, 584px 134px #FFF, 237px 1371px #FFF, 33px 143px #FFF, 1893px 899px #FFF, 1008px 1145px #FFF, 24px 1899px #FFF, 1113px 100px #FFF, 1599px 1492px #FFF, 946px 1318px #FFF, 1400px 1709px #FFF, 898px 863px #FFF, 1439px 134px #FFF, 321px 1598px #FFF;
 }
-
 #stars3 {
-  width: 3px;
-  height: 3px;
-  background: transparent;
+  width: 3px; height: 3px; background: transparent;
   box-shadow: 1845px 1292px #FFF, 1481px 1003px #FFF, 138px 118px #FFF, 1334px 1182px #FFF, 553px 1802px #FFF, 442px 106px #FFF, 1058px 1323px #FFF, 1644px 143px #FFF, 749px 1242px #FFF, 1039px 1311px #FFF;
   animation: animStar 150s linear infinite;
 }
 #stars3:after {
-  content: " ";
-  position: absolute;
-  top: 2000px;
-  width: 3px;
-  height: 3px;
-  background: transparent;
+  content: " "; position: absolute; top: 2000px; width: 3px; height: 3px; background: transparent;
   box-shadow: 1845px 1292px #FFF, 1481px 1003px #FFF, 138px 118px #FFF, 1334px 1182px #FFF, 553px 1802px #FFF, 442px 106px #FFF, 1058px 1323px #FFF, 1644px 143px #FFF, 749px 1242px #FFF, 1039px 1311px #FFF;
 }
 
 /* --- Main Page Styles --- */
-html {
-    height: 100%;
-}
+html { height: 100%; }
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  margin: 0; padding: 0; font-family: sans-serif;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-  color: #fff;
-  min-height: 100vh;
-  box-sizing: border-box;
-  /* New styles to prevent text selection */
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10+ and Edge */
-  user-select: none; /* Standard syntax */
+  color: #fff; min-height: 100vh; box-sizing: border-box;
+  -webkit-user-select: none; -ms-user-select: none; user-select: none;
 }
+.page-content { position: relative; z-index: 1; padding: 40px 20px; }
+.header { text-align: center; padding: 20px 0; margin-bottom: 40px; }
+.logo { max-width: 250px; height: auto; }
 
-.page-content {
-    position: relative;
-    z-index: 1;
-    padding: 40px 20px;
-}
-
-/* Header and Logo Styles */
-.header {
+/* --- Bank Deposit Box Styles --- */
+.bank-deposit-box {
   text-align: center;
-  padding: 20px 0;
-  margin-bottom: 60px;
-}
-
-.logo {
-  max-width: 250px;
-  height: auto;
-}
-
-/* Responsive Grid Container for plans */
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 50px;
-  justify-items: center;
-  align-items: stretch;
-  width: 100%;
-  max-width: 1700px;
-  margin: 0 auto;
-}
-
-/* Pricing Box Styles */
-.box {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 380px;
-  min-height: 540px;
-  padding: 40px 25px;
-  box-sizing: border-box;
-  text-align: center;
-  background: linear-gradient(0deg, #202020, #464646);
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 150px;
-  border-bottom-right-radius: 150px;
-  border: 3px solid #ffc98e;
-  box-shadow: 0 0 0 6px #323232, 0 0 0 10px #ffc98e, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1);
-  transition: transform 0.4s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.box:hover {
-  transform: translateY(-10px);
-}
-
-.box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  pointer-events: none;
-}
-
-/* Plan Icon Style */
-.box .title .plan-icon {
-  width: 80px;
-  height: auto;
-  margin-top: 20px;
-}
-
-.box .title h2 {
-  color: #fff;
-  margin: 15px 0 0;
-  padding: 0;
-  font-size: 1.8rem;
-}
-
-.box .price {
-  margin: 20px 0;
-}
-
-.box .price h4 {
-  font-size: 3.5rem;
-  color: #ffc98e;
-  margin: 0;
-  padding: 0;
-}
-
-.box .price p, .price-note {
-  margin: 5px 0 0;
-  padding: 0;
-  color: #ccc;
-  font-size: 1rem;
-}
-
-.box .option {
-  margin-top: auto;
-  padding-bottom: 20px;
-}
-
-.box .option ul {
-  margin: 20px 0 0;
-  padding: 0;
-  list-style: none;
-  display: inline-block;
-  text-align: left;
-}
-
-.box .option ul li {
-  color: #fff;
-  padding: 10px 0;
-  font-size: 1.1rem;
-}
-
-.box .option ul li .fa {
-  color: #ffc98e;
-  margin-right: 12px;
-  width: 20px;
-}
-
-/* --- Free Plan --- */
-.box.free {
-  border-color: #aaa;
-  box-shadow: 0 0 0 6px #323232, 0 0 0 10px #aaa, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1);
-}
-
-.box.free .price-note {
-  margin-top: -15px;
-}
-
-.box.free .option ul li .fa {
-  color: #aaa;
-}
-
-.free-price {
+  background: rgba(0, 0, 0, 0.25);
+  border: 2px solid #ffc98e;
+  border-radius: 20px;
+  padding: 15px 30px;
+  max-width: 600px;
+  margin: 0 auto 60px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
+  box-shadow: 0 0 20px rgba(255, 201, 142, 0.25);
+}
+.deposit-amount-img { max-height: 45px; width: auto; }
+.currency-emoji { font-size: 2.2rem; }
+
+/* Responsive Grid Container */
+.container {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px; justify-items: center; align-items: stretch;
+  width: 100%; max-width: 1700px; margin: 0 auto;
 }
 
-.free-price h4 {
-  font-size: 2.5rem;
-  display: flex;
-  align-items: center;
-  color: #aaa;
+/* Pricing Box Styles */
+.box {
+  position: relative; overflow: hidden; width: 100%; max-width: 380px;
+  min-height: 540px; padding: 40px 25px; box-sizing: border-box; text-align: center;
+  background: linear-gradient(0deg, #202020, #464646);
+  border-radius: 50px 50px 150px 150px;
+  border: 3px solid #ffc98e;
+  box-shadow: 0 0 0 6px #323232, 0 0 0 10px #ffc98e, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1);
+  transition: transform 0.4s ease;
+  display: flex; flex-direction: column;
 }
+.box:hover { transform: translateY(-10px); }
+.box::before {
+  content: ""; position: absolute; top: 0; left: 0;
+  width: 50%; height: 100%; background: rgba(255, 255, 255, 0.1); pointer-events: none;
+}
+.box .title .plan-icon { width: 80px; height: auto; margin-top: 20px; }
+.box .title h2 { color: #fff; margin: 15px 0 0; padding: 0; font-size: 1.8rem; }
+.box .price { margin: 20px 0; }
+.box .price h4 { font-size: 3.5rem; color: #ffc98e; margin: 0; padding: 0; }
+.box .price p, .price-note { margin: 5px 0 0; padding: 0; color: #ccc; font-size: 1rem; }
+.box .option { margin-top: auto; padding-bottom: 20px; }
+.box .option ul { margin: 20px 0 0; padding: 0; list-style: none; display: inline-block; text-align: left; }
+.box .option ul li { color: #fff; padding: 10px 0; font-size: 1.1rem; }
+.box .option ul li .fa { color: #ffc98e; margin-right: 12px; width: 20px; }
 
-.free-price span {
-  font-size: 1.2rem;
-  color: #888;
-  font-weight: bold;
-}
-
-.price-boost-icon {
-  width: 32px;
-  height: 32px;
-  margin-left: 8px;
-}
+/* --- Free Plan --- */
+.box.free { border-color: #aaa; box-shadow: 0 0 0 6px #323232, 0 0 0 10px #aaa, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1); }
+.box.free .price-note { margin-top: -15px; }
+.box.free .option ul li .fa { color: #aaa; }
+.free-price { display: flex; justify-content: center; align-items: center; gap: 15px; }
+.free-price h4 { font-size: 2.5rem; display: flex; align-items: center; color: #aaa; }
+.free-price span { font-size: 1.2rem; color: #888; font-weight: bold; }
+.price-boost-icon { width: 32px; height: 32px; margin-left: 8px; }
 
 /* --- Premium Plan --- */
-.box.premium {
-  border-color: #ffd700;
-  box-shadow: 0 0 0 6px #323232, 0 0 0 10px #ffd700, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1);
-}
-.box.premium .price h4, .box.premium .option ul li .fa {
-  color: #ffd700;
-}
+.box.premium { border-color: #ffd700; box-shadow: 0 0 0 6px #323232, 0 0 0 10px #ffd700, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1); }
+.box.premium .price h4, .box.premium .option ul li .fa { color: #ffd700; }
 
 /* --- Platinum Plan --- */
-.box.platinum {
-  border-color: #e5e4e2;
-  box-shadow: 0 0 0 6px #323232, 0 0 0 10px #e5e4e2, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1);
-}
-
-.box.platinum .price h4.strikethrough {
-  font-size: 2rem;
-  color: #aaa;
-  margin: 0;
-}
-
-.box.platinum .price p.starting-price {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #e5e4e2;
-  margin-top: 5px;
-}
-
-.box.platinum .option ul li .fa {
-  color: #e5e4e2;
-}
+.box.platinum { border-color: #e5e4e2; box-shadow: 0 0 0 6px #323232, 0 0 0 10px #e5e4e2, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1); }
+.box.platinum .price h4.strikethrough { font-size: 2rem; color: #aaa; margin: 0; }
+.box.platinum .price p.starting-price { font-size: 1.5rem; font-weight: bold; color: #e5e4e2; margin-top: 5px; }
+.box.platinum .option ul li .fa { color: #e5e4e2; }
