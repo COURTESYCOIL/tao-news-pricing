@@ -42,6 +42,13 @@
             <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/image-removebg-preview%20(6).png" alt="TAO News Logo" class="logo" draggable="false">
         </div>
 
+        <!-- Bank Deposit Box -->
+        <div class="bank-deposit-box">
+            <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/Cool%20Text%20-%201013%20493834819790910.png" alt="TAO News Bank Deposit Amount" class="deposit-amount-img" draggable="false">
+            <span class="currency-emoji">🧈</span>
+        </div>
+
+        <!-- Pricing Container -->
         <div class="container">
           <!-- Free Plan Box -->
           <div class="box free">
@@ -130,45 +137,24 @@
 
     <script>
         // --- Security Scripts ---
-        // Disable right-click
         document.addEventListener('contextmenu', event => event.preventDefault());
-
-        // Disable keyboard shortcuts for DevTools
         document.onkeydown = function(e) {
-            if (e.keyCode == 123) { // F12
-                return false;
-            }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl+Shift+I
-                return false;
-            }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl+Shift+J
-                return false;
-            }
-            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U
+            if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0))) || (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
                 return false;
             }
         };
-
-        // Annoy users who open DevTools via the menu
-        setInterval(function () {
-            debugger;
-        }, 500);
+        setInterval(() => { debugger; }, 500);
 
         // --- Loading Screen Logic ---
         window.addEventListener('load', function(){
             const loadingScreen = document.getElementById('loading-screen');
             const pageContent = document.querySelector('.page-content');
-
-            setTimeout(function() {
+            setTimeout(() => {
                 loadingScreen.classList.add('fade-out');
                 pageContent.classList.remove('hidden');
                 pageContent.classList.add('fade-in');
-
-                setTimeout(function() {
-                    loadingScreen.style.display = 'none';
-                }, 1000);
-
-            }, 25000); // 25 seconds
+                setTimeout(() => { loadingScreen.style.display = 'none'; }, 1000);
+            }, 25000);
         });
     </script>
 
