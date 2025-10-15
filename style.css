@@ -1,33 +1,31 @@
 body {
   margin: 0;
-  padding: 20px;
+  padding: 40px 20px;
   font-family: sans-serif;
   background-color: #323232;
   color: #fff;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 /* Header and Logo Styles */
 .header {
   text-align: center;
   padding: 20px 0;
-  margin-bottom: 40px; /* Adds space between the logo and the pricing boxes */
+  margin-bottom: 40px;
 }
 
 .logo {
-  max-width: 300px; /* Adjust the size of the logo if needed */
+  max-width: 250px;
   height: auto;
 }
 
-/* Pricing Container Styles */
+/* Centered Container for the single plan */
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  grid-gap: 80px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto; /* Center the container itself */
+  width: 100%;
 }
 
 /* Pricing Box Styles */
@@ -35,8 +33,8 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 360px; /* Max width for each box */
-  height: 560px;
+  max-width: 380px; /* A slightly wider box */
+  min-height: 560px;
   padding: 40px 20px;
   box-sizing: border-box;
   text-align: center;
@@ -51,8 +49,7 @@ body {
 }
 
 .box:hover {
-  transform: scale(1.1);
-  z-index: 10;
+  transform: scale(1.05); /* A more subtle hover effect */
 }
 
 .box::before {
@@ -66,39 +63,54 @@ body {
   pointer-events: none;
 }
 
-.box .title .fa {
+/* Plan Icon Style */
+.box .title .plan-icon {
+  width: 80px;
+  height: auto;
   margin-top: 20px;
-  font-size: 60px;
-  color: #ffc98e;
 }
 
 .box .title h2 {
   color: #fff;
-  margin: 20px 0 0;
+  margin: 15px 0 0;
   padding: 0;
 }
 
 .box .price h4 {
   font-size: 60px;
   color: #ffc98e;
-  margin: 10px 0;
+  margin: 20px 0 5px 0; /* Adjusted margin */
   padding: 0;
+}
+
+.box .price p {
+  margin: 0;
+  padding: 0;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.box .option {
+  margin-top: 40px; /* More space above perks */
 }
 
 .box .option ul {
   margin: 20px 0;
   padding: 0;
   list-style: none;
+  display: inline-block; /* Center the list items */
+  text-align: left;
 }
 
 .box .option ul li {
   color: #fff;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.1rem;
 }
 
-.box .option ul li:last-child {
-  border-bottom: none;
+.box .option ul li .fa {
+  color: #ffc98e; /* Match icon color to the border */
+  margin-right: 10px;
 }
 
 .box .btn {
@@ -106,8 +118,13 @@ body {
   background: #ffc98e;
   color: #262626;
   font-weight: bold;
-  padding: 10px 30px;
-  margin-top: 20px;
+  padding: 12px 35px;
+  margin-top: 30px;
   text-decoration: none;
   border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.box .btn:hover {
+  background-color: #fff;
 }
