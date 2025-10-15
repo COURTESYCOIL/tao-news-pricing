@@ -20,15 +20,16 @@ body {
   height: auto;
 }
 
-/* Grid Container for multiple plans */
+/* Responsive Grid Container for plans */
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 80px;
+  /* On extra-small screens, one column. `minmax` prevents overflow. */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
   justify-items: center;
   align-items: center;
   width: 100%;
-  max-width: 900px; /* Adjust max-width for two boxes */
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -38,8 +39,9 @@ body {
   overflow: hidden;
   width: 100%;
   max-width: 380px;
-  height: 580px;
-  padding: 40px 20px;
+  /* Let the content define the height */
+  min-height: 520px;
+  padding: 40px 25px;
   box-sizing: border-box;
   text-align: center;
   background: linear-gradient(0deg, #202020, #464646);
@@ -49,11 +51,13 @@ body {
   border-bottom-right-radius: 150px;
   border: 3px solid #ffc98e;
   box-shadow: 0 0 0 6px #323232, 0 0 0 10px #ffc98e, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1);
-  transition: transform 0.5s;
+  transition: transform 0.4s ease;
+  display: flex;
+  flex-direction: column; /* Align content vertically */
 }
 
 .box:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px); /* A lifting hover effect */
 }
 
 .box::before {
@@ -78,12 +82,17 @@ body {
   color: #fff;
   margin: 15px 0 0;
   padding: 0;
+  font-size: 1.8rem;
+}
+
+.box .price {
+  margin: 20px 0;
 }
 
 .box .price h4 {
-  font-size: 60px;
+  font-size: 3.5rem;
   color: #ffc98e;
-  margin: 20px 0 5px 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -95,7 +104,8 @@ body {
 }
 
 .box .option {
-  margin-top: 40px;
+  margin-top: auto; /* Pushes perks down to create space */
+  padding-bottom: 20px;
 }
 
 .box .option ul {
@@ -114,28 +124,13 @@ body {
 
 .box .option ul li .fa {
   color: #ffc98e;
-  margin-right: 10px;
-}
-
-.box .btn {
-  display: inline-block;
-  background: #ffc98e;
-  color: #262626;
-  font-weight: bold;
-  padding: 12px 35px;
-  margin-top: 30px;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: background-color 0.3s;
-}
-
-.box .btn:hover {
-  background-color: #fff;
+  margin-right: 12px;
+  width: 20px; /* Aligns the text nicely */
 }
 
 /* --- Styles to make the Premium Plan stand out --- */
 .box.premium {
-  border-color: #ffd700; /* A brighter gold color */
+  border-color: #ffd700;
   box-shadow: 0 0 0 6px #323232, 0 0 0 10px #ffd700, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1);
 }
 
@@ -145,8 +140,4 @@ body {
 
 .box.premium .option ul li .fa {
   color: #ffd700;
-}
-
-.box.premium .btn {
-  background: #ffd700;
 }
