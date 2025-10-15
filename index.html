@@ -7,103 +7,112 @@
     <!-- Browser tab icon -->
     <link rel="icon" type="image/png" href="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/image-removebg-preview%20(6).png">
     
+    <!-- Google Fonts link for the starfield effect -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for checkmark icons -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-    <!-- Header Section with Main Logo -->
-    <div class="header">
-        <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/image-removebg-preview%20(6).png" alt="TAO News Logo" class="logo">
-    </div>
+    <!-- Starfield Background Elements -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
 
-    <!-- Pricing Container -->
-    <div class="container">
-      <!-- Free Plan Box -->
-      <div class="box free">
-        <div class="title">
-          <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/output-onlinepngtools%20(2).png" alt="Free Plan Icon" class="plan-icon">
-          <h2>Free Plan</h2>
+    <!-- Your Existing Page Content -->
+    <div class="page-content">
+        <!-- Header Section with Main Logo -->
+        <div class="header">
+            <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/image-removebg-preview%20(6).png" alt="TAO News Logo" class="logo">
         </div>
-        <!-- Updated Price Section -->
-        <div class="price free-price">
-          <h4>1 <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/5582632.webp" alt="Boost Icon" class="price-boost-icon"></h4>
-          <span>OR</span>
-          <h4>26 🧈</h4>
-        </div>
-        <p class="price-note">per Article</p>
-        <div class="option">
-          <ul>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Max Characters: 150</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Max Attachments: 1</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Max Emojis: 1</li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Starter Plan Box -->
-      <div class="box">
-        <div class="title">
-          <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/image-removebg-preview%20(6).png" alt="Starter Plan Icon" class="plan-icon">
-          <h2>Starter Plan</h2>
-        </div>
-        <div class="price">
-          <h4>101 🧈</h4>
-          <p>per Article</p>
-        </div>
-        <div class="option">
-          <ul>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Max characters: 200</li>
-            <!-- This is the updated value -->
-            <li><i class="fa fa-check" aria-hidden="true"></i>Max Attachments: 2</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Max Emojis: 5</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Client role in 𝚃𝙰𝙾 𝙽𝚎𝚠𝚜</li>
-          </ul>
-        </div>
-      </div>
 
-      <!-- Premium Plan Box -->
-      <div class="box premium">
-        <div class="title">
-          <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/output-onlinepngtools.png" alt="Premium Plan Icon" class="plan-icon">
-          <h2>Premium Plan</h2>
+        <!-- Pricing Container -->
+        <div class="container">
+          <!-- Free Plan Box -->
+          <div class="box free">
+            <div class="title">
+              <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/output-onlinepngtools%20(2).png" alt="Free Plan Icon" class="plan-icon">
+              <h2>Free Plan</h2>
+            </div>
+            <div class="price free-price">
+              <h4>1 <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/5582632.webp" alt="Boost Icon" class="price-boost-icon"></h4>
+              <span>OR</span>
+              <h4>26 🧈</h4>
+            </div>
+            <p class="price-note">per Article</p>
+            <div class="option">
+              <ul>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Max Characters: 150</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Max Attachments: 1</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Max Emojis: 1</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Starter Plan Box -->
+          <div class="box">
+            <div class="title">
+              <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/image-removebg-preview%20(6).png" alt="Starter Plan Icon" class="plan-icon">
+              <h2>Starter Plan</h2>
+            </div>
+            <div class="price">
+              <h4>101 🧈</h4>
+              <p>per Article</p>
+            </div>
+            <div class="option">
+              <ul>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Max characters: 200</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Max Attachments: 2</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Max Emojis: 5</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Client role in 𝚃𝙰𝙾 𝙽𝚎𝚠𝚜</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Premium Plan Box -->
+          <div class="box premium">
+            <div class="title">
+              <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/output-onlinepngtools.png" alt="Premium Plan Icon" class="plan-icon">
+              <h2>Premium Plan</h2>
+            </div>
+            <div class="price">
+              <h4>501 🧈</h4>
+              <p>per Article</p>
+            </div>
+            <div class="option">
+              <ul>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Max characters: 1000</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Max Attachments: 4</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Max Emojis: 15</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Premium role in 𝚃𝙰𝙾 𝙽𝚎𝚠𝚜</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Platinum Plan Box -->
+          <div class="box platinum">
+            <div class="title">
+              <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/output-onlinepngtools%20(1).png" alt="Platinum Plan Icon" class="plan-icon">
+              <h2>Platinum Plan</h2>
+            </div>
+            <div class="price">
+              <h4 class="strikethrough"><s>3,501 🧈</s></h4>
+              <p class="starting-price">Starting from 1,501 🧈 per Article!</p>
+            </div>
+            <div class="option">
+              <ul>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Max characters: Unlimited</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Max Attachments: 15</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Max Emojis: 65</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Animated Articles</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Custom Fonts & Effects</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Platinum Role in 𝚃𝙰𝙾 𝙽𝚎𝚠𝚜</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="price">
-          <h4>501 🧈</h4>
-          <p>per Article</p>
-        </div>
-        <div class="option">
-          <ul>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Max characters: 1000</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Max Attachments: 4</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Max Emojis: 15</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Premium role in 𝚃𝙰𝙾 𝙽𝚎𝚠𝚜</li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Platinum Plan Box -->
-      <div class="box platinum">
-        <div class="title">
-          <img src="https://aqbpwadxaqjjenwtamfm.supabase.co/storage/v1/object/public/KOOL%20MEGS/output-onlinepngtools%20(1).png" alt="Platinum Plan Icon" class="plan-icon">
-          <h2>Platinum Plan</h2>
-        </div>
-        <div class="price">
-          <h4 class="strikethrough"><s>3,501 🧈</s></h4>
-          <p class="starting-price">Starting from 1,501 🧈 per Article!</p>
-        </div>
-        <div class="option">
-          <ul>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Max characters: Unlimited</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Max Attachments: 15</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Max Emojis: 65</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Animated Articles</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Custom Fonts & Effects</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i>Platinum Role in 𝚃𝙰𝙾 𝙽𝚎𝚠𝚜</li>
-          </ul>
-        </div>
-      </div>
     </div>
 
     <!-- JavaScript to disable right-click -->
