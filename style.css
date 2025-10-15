@@ -23,13 +23,12 @@ body {
 /* Responsive Grid Container for plans */
 .container {
   display: grid;
-  /* On extra-small screens, one column. `minmax` prevents overflow. */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 60px;
   justify-items: center;
   align-items: center;
   width: 100%;
-  max-width: 900px;
+  max-width: 1300px; /* Increased max-width for three cards */
   margin: 0 auto;
 }
 
@@ -39,8 +38,7 @@ body {
   overflow: hidden;
   width: 100%;
   max-width: 380px;
-  /* Let the content define the height */
-  min-height: 520px;
+  min-height: 540px;
   padding: 40px 25px;
   box-sizing: border-box;
   text-align: center;
@@ -53,11 +51,11 @@ body {
   box-shadow: 0 0 0 6px #323232, 0 0 0 10px #ffc98e, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1);
   transition: transform 0.4s ease;
   display: flex;
-  flex-direction: column; /* Align content vertically */
+  flex-direction: column;
 }
 
 .box:hover {
-  transform: translateY(-10px); /* A lifting hover effect */
+  transform: translateY(-10px);
 }
 
 .box::before {
@@ -97,19 +95,19 @@ body {
 }
 
 .box .price p {
-  margin: 0;
+  margin: 5px 0 0;
   padding: 0;
   color: #ccc;
   font-size: 1rem;
 }
 
 .box .option {
-  margin-top: auto; /* Pushes perks down to create space */
+  margin-top: auto;
   padding-bottom: 20px;
 }
 
 .box .option ul {
-  margin: 20px 0;
+  margin: 20px 0 0;
   padding: 0;
   list-style: none;
   display: inline-block;
@@ -125,19 +123,37 @@ body {
 .box .option ul li .fa {
   color: #ffc98e;
   margin-right: 12px;
-  width: 20px; /* Aligns the text nicely */
+  width: 20px;
 }
 
-/* --- Styles to make the Premium Plan stand out --- */
+/* --- Premium Plan --- */
 .box.premium {
   border-color: #ffd700;
   box-shadow: 0 0 0 6px #323232, 0 0 0 10px #ffd700, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1);
 }
-
-.box.premium .price h4 {
+.box.premium .price h4, .box.premium .option ul li .fa {
   color: #ffd700;
 }
 
-.box.premium .option ul li .fa {
-  color: #ffd700;
+/* --- Platinum Plan --- */
+.box.platinum {
+  border-color: #e5e4e2; /* Platinum color */
+  box-shadow: 0 0 0 6px #323232, 0 0 0 10px #e5e4e2, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1);
+}
+
+.box.platinum .price h4.strikethrough {
+  font-size: 2rem; /* Smaller size for the old price */
+  color: #aaa;
+  margin: 0;
+}
+
+.box.platinum .price p.starting-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e5e4e2;
+  margin-top: 5px;
+}
+
+.box.platinum .option ul li .fa {
+  color: #e5e4e2;
 }
