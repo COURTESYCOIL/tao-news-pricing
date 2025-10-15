@@ -24,11 +24,11 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 60px;
+  gap: 50px;
   justify-items: center;
-  align-items: center;
+  align-items: stretch; /* Makes cards equal height in a row */
   width: 100%;
-  max-width: 1300px; /* Increased max-width for three cards */
+  max-width: 1700px; /* Increased max-width for four cards */
   margin: 0 auto;
 }
 
@@ -126,6 +126,26 @@ body {
   width: 20px;
 }
 
+/* --- Perk with Boost Icon --- */
+.boost-perk {
+  display: flex;
+  align-items: center;
+}
+.boost-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+
+/* --- Free Plan --- */
+.box.free {
+  border-color: #aaa;
+  box-shadow: 0 0 0 6px #323232, 0 0 0 10px #aaa, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1);
+}
+.box.free .price h4, .box.free .option ul li .fa {
+  color: #aaa;
+}
+
 /* --- Premium Plan --- */
 .box.premium {
   border-color: #ffd700;
@@ -142,7 +162,7 @@ body {
 }
 
 .box.platinum .price h4.strikethrough {
-  font-size: 2rem; /* Smaller size for the old price */
+  font-size: 2rem;
   color: #aaa;
   margin: 0;
 }
