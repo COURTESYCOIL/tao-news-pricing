@@ -28,7 +28,7 @@ body {
   justify-items: center;
   align-items: stretch; /* Makes cards equal height in a row */
   width: 100%;
-  max-width: 1700px; /* Increased max-width for four cards */
+  max-width: 1700px;
   margin: 0 auto;
 }
 
@@ -94,7 +94,7 @@ body {
   padding: 0;
 }
 
-.box .price p {
+.box .price p, .price-note {
   margin: 5px 0 0;
   padding: 0;
   color: #ccc;
@@ -126,24 +126,44 @@ body {
   width: 20px;
 }
 
-/* --- Perk with Boost Icon --- */
-.boost-perk {
-  display: flex;
-  align-items: center;
-}
-.boost-icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 8px;
-}
-
 /* --- Free Plan --- */
 .box.free {
   border-color: #aaa;
   box-shadow: 0 0 0 6px #323232, 0 0 0 10px #aaa, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1);
 }
-.box.free .price h4, .box.free .option ul li .fa {
+
+.box.free .price-note {
+  margin-top: -15px; /* Pull the subtext up closer to the price */
+}
+
+.box.free .option ul li .fa {
   color: #aaa;
+}
+
+.free-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.free-price h4 {
+  font-size: 2.5rem; /* Make font smaller to fit */
+  display: flex;
+  align-items: center;
+  color: #aaa;
+}
+
+.free-price span {
+  font-size: 1.2rem;
+  color: #888;
+  font-weight: bold;
+}
+
+.price-boost-icon {
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
 }
 
 /* --- Premium Plan --- */
@@ -157,7 +177,7 @@ body {
 
 /* --- Platinum Plan --- */
 .box.platinum {
-  border-color: #e5e4e2; /* Platinum color */
+  border-color: #e5e4e2;
   box-shadow: 0 0 0 6px #323232, 0 0 0 10px #e5e4e2, 0 0 0 20px #323232, 0 10px 150px rgba(0, 0, 0, 1);
 }
 
