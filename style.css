@@ -1,27 +1,42 @@
 body {
   margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  padding: 20px;
   font-family: sans-serif;
   background-color: #323232;
+  color: #fff;
 }
 
+/* Header and Logo Styles */
+.header {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 40px; /* Adds space between the logo and the pricing boxes */
+}
+
+.logo {
+  max-width: 300px; /* Adjust the size of the logo if needed */
+  height: auto;
+}
+
+/* Pricing Container Styles */
 .container {
-  padding: 40px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   grid-gap: 80px;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   max-width: 1200px;
+  margin: 0 auto; /* Center the container itself */
 }
 
+/* Pricing Box Styles */
 .box {
   position: relative;
   overflow: hidden;
   width: 100%;
+  max-width: 360px; /* Max width for each box */
+  height: 560px;
   padding: 40px 20px;
   box-sizing: border-box;
   text-align: center;
@@ -35,10 +50,9 @@ body {
   transition: 0.5s;
 }
 
-@media (min-width: 840px) {
-  .box:hover {
-    transform: scale(1.1);
-  }
+.box:hover {
+  transform: scale(1.1);
+  z-index: 10;
 }
 
 .box::before {
